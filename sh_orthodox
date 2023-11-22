@@ -1,0 +1,9 @@
+#!/bin/bash
+
+g++ -o orthodox_generator orthodox_generator.cpp
+./orthodox_generator "$@"
+if [ $? -eq 1 ]; then
+    echo "Failed"
+else
+    echo "DONE ✅"
+fi
